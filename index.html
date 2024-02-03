@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Coding Assessment L2 boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e11a794943.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+  <body>
+    <div id="productDetails">
+      <!-- Product details will be populated here -->
+      <img id="productImage" alt="Product Image" />
 
-</head>
+      <!-- <p id="productPrice"></p> -->
+      <div id="priceContainer">
+        <div id="titleContainer">
+          <h2 id="productTitle"></h2>
+        </div>
+        <div class="compare">
+            <h4 id="productPrice"></h4>
+            <p id="comparePrice"><p/>
+            <p id="calculatedPercentage"></p>
+        </div>
+        
+        <div id="buttoncontainer">
+          <p>Choose a color</p>
+          <label class="color">
+            <input id="test1" type="radio" name="color" value="brown" />
+            <span id="c1"></span>
+          </label>
+          <label class="color">
+            <input id="test1" type="radio" name="color" value="green" />
+            <span id="c2"></span>
+          </label>
 
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+          <label class="color">
+            <input id="test1" type="radio" name="color" value="blue" />
+            <span id="c3"></span>
+          </label>
+
+          <label class="color">
+            <input id="test1" type="radio" name="color" value="pink" />
+            <span id="c4"></span>
+          </label>
+        </div>
+
+        <div id="sizecontainer">
+          <p>Choose a size</p>
+          <div></div>
+
+          <div></div>
+          <div class="labelbtn1"></div>
+          <div class="labelbtn1"></div>
+          <div class="labelbtn1">
+            <!-- <label> <input type="radio" name="size" value="XXL" /> XXL </label> -->
+          </div>
+        </div>
+
+        <div class="input-group">
+          <button id="decrement">-</button>
+          <input type="number" id="input" value="0" readonly />
+          <button id="increment">+</button>
+          <button class="bouton">
+            <i class="fa-solid fa-bag-shopping"> </i> Add To Cart
+          </button>
+        </div>
+        <p id="selectedproduct"></p>
+        <p id="description"></p>
+      </div>
+
+      <!-- <p id="productDescription"></p> -->
     </div>
-    <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
